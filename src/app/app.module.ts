@@ -11,6 +11,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MaterialModule } from './material.module';
 import { ReactiveFormsModule } from '@angular/forms';
+import { ApiServiceService } from './api-service.service';
+import { StorageService } from './storage.service';
 
 @NgModule({
   declarations: [
@@ -28,7 +30,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     MaterialModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ApiServiceService, StorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
